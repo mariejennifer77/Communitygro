@@ -95,7 +95,7 @@ const locations = [
     hours: "Open daily dawn to dusk",
     type: "garden",
     image: "images/soon.jpg"
-  }
+  },
 ];
 
 let map;
