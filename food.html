@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Food Pantries & Prepared Meals</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="food">
+
+  <header class="top-bar">
+    <img src="images/banner.png" alt="Community Banner" class="banner">
+  </header>
+
+  <div id="globalNav"></div>
+
+  <section class="nav-section">
+    
+    <div id="groupedLocations"></div> <!-- important -->
+  </section>
+
+  <section class="nav-section">
+    <span class="nav-question">📍 Locations Map</span>
+    <div id="map"></div>
+  </section>
+
+  <footer>
+    <p style="text-align: center;">&copy; 2025 Communityglo</p>
+  </footer>
+
+  <script src="layout.js"></script>
+  <script src="script.js"></script>
+   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAuGai_Ek3MEEm5kbg4MamAhpjyd1Q4DQ&callback=initMap" async defer></script>
+</body>
+</html>
