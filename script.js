@@ -1,3 +1,7 @@
+let map;
+let markers = [];
+let filtered = []; // <- Global filtered list
+
 const locations = [
   {
     name: "Fish of Galesburg",
@@ -98,16 +102,14 @@ const locations = [
   }
 ];
 
-let map;
-let markers = [];
 
-function initMap(locationList) {
+function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
     zoom: 7,
     center: { lat: 40.7, lng: -89.5 }
   });
 
-  showMarkers(locationList);
+  showMarkers(filtered);
 }
 
 function showMarkers(locationList) {
@@ -228,8 +230,8 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   const allowedTypes = typeMap[pageType] || typeMap["all"];
-  const filtered = locations.filter(loc => allowedTypes.includes(loc.type));
+  filtered = locations.filter(loc => allowedTypes.includes(loc.type));
 
-  initMap(filtered);
   displayGroupedLocations(filtered);
+  // ✅ Do NOT call initMap() here — Google Maps will do it
 });
