@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     <a href="food.html" class="nav-btn"><span class="nav-icon">🍽️</span><span class="nav-label">Food</span></a>
     <a href="education.html" class="nav-btn"><span class="nav-icon">📚</span><span class="nav-label">Education</span></a>
     <a href="volunteer.html" class="nav-btn"><span class="nav-icon">🙋</span><span class="nav-label">Volunteer</span></a>
-    <a href="donate.html" class="nav-btn"><span class="nav-icon">💰</span><span class="nav-label">Donate</span></a>
+    <a href="https://checkout.square.site/merchant/ML36SHZKYW3RH/checkout/WZHG7ZJST4AUWURF22KQRJQ5?src=qr" class="nav-btn"><span class="nav-icon">💰</span><span class="nav-label">Donate</span></a>
   `;
 
   if (page === "" || page === "index.html") {

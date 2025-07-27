@@ -86,7 +86,7 @@ const locations = [
     lng: -90.361495,
     hours: "Open daily dawn to dusk",
     type: "garden",
-    image: "images/soon.jpg"
+    image: "images/soon.png"
   },
      {
     name: "CommunityGro Hub Host Garden",
@@ -94,7 +94,7 @@ const locations = [
     lng: -90.348718,
     hours: "Open daily dawn to dusk",
     type: "garden",
-    image: "images/soon.jpg"
+    image: "images/soon.png"
   },
 ];
 
